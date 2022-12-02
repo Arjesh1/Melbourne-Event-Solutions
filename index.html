@@ -56,13 +56,16 @@
 	
 
 	<main>	
+		<video id="video" controls="false" controls autoplay>
+			<source src="media/video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
 	
-	<video controls autoplay>
-	  <source src="media/video.mp4" type="video/mp4">
-	  Your browser does not support mp4 videos. Change your browser!
-	</video>
-	
-	
+		  <script>
+			function myFunction() {
+			  document.getElementById("video").controls = false;
+			}
+			</script>
 
 	</main>
     </div>
